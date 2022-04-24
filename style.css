@@ -1,0 +1,531 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&family=Alice&family=Allura&family=Hubballi&display=swap');
+
+/*   GENERAL   */
+body {
+   margin: 0px;
+   font-family: 'Hubballi';
+  }
+h1{
+  font-family: 'Alice', serif;
+  font-size: 42px;
+  font-weight: lighter;
+  color: white;
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: #fffaf0;
+}
+li:hover {
+  color: white;
+  text-decoration: underline;
+}
+li:active {
+  color: #6d6d6d;
+  text-decoration: underline;
+}  
+/*  NAVBAR  */
+nav {
+  position: fixed;
+  height: 100%;
+  width: 8%;
+}
+nav ul {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  list-style-type: none;
+  transform: rotate(270deg);
+  color: white;
+  font-size: 23px;
+}
+#nav-logo {
+  position:absolute;
+  z-index: -1;
+  width: 0px;
+}
+/*  WELCOME SECTION */
+#start {
+  justify-content: center;
+  background-image: url(background/background-1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh; 
+}
+#start-logo-background {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 30px 0px 30px 0px;
+  width: 85%;
+  max-width: 1100px ;
+}
+#start-logo-background img{
+  width: 70%;
+}
+#start h2 {
+  font-size: 36px;
+  font-family: 'Allura';
+  font-weight: lighter;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}  
+/*  ABOUT  */
+#about {
+  background-image: url(background/background-2A.jpg);
+  background-size:cover;
+  background-position: top;
+}
+#about-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0,0,0, 0.3); 
+  width: 100%;    
+}    
+#article-about {
+ color: white;
+  text-align: center;
+  width: 70%;
+}
+#article-about h2 {
+  font-size: 36px;
+  font-family: 'Allura';
+  font-weight: lighter;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+#article-about p {
+  font-size: 24px;
+  line-height: 1.6;
+  font-family: 'Hubballi';    
+}
+#signature-area{
+    text-align: end;
+    padding-top: 28px;
+    width: 80%;
+}
+#article-about img{
+  max-width: 320px;
+  min-width: 150px;
+}
+/*   Comments   */
+#article-comments {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-bottom: 90px;
+  width: 77%;
+}
+.comment {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.9);
+  height: 200px;
+  width: 297px;
+  margin: 70px 10px 0px 10px;
+  padding: 20px 20px 0px 20px;
+}
+.comment h4 {
+  text-align: right;
+  margin: 0px;
+  margin-bottom: 25px;  
+}
+.comment p {
+  text-align: center;
+}
+/*   BREAD   */
+#bread {
+  background-image: url(background/background-3A.jpg);
+  background-size: cover;
+  background-position: bottom;    
+}
+.container {
+  display: grid;
+  grid-template-columns: 433px 17px 433px;
+  grid-template-rows: 385px 17px 175px 17px 385px;
+  grid-template-areas:
+    "everyday . sour"
+    ". . sour"
+    "french . sour"
+    "french . ."
+    "french . banana";
+  margin-bottom: 100px;
+}
+.tile-v {
+  width: 412px;
+  height: 555px;
+  border: solid white 10px;
+}
+.tile-h {
+  width: 412px;
+  height: 364px;
+  border: solid white 10px;
+}
+.container a {
+  display:grid;
+  align-items: center;
+  justify-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(0,0,0, 0);
+  font-family: 'Allura';
+  font-size: 48px;
+}
+.container img {
+  object-fit: cover;
+}
+.container a:hover {
+  background-color: rgba(255, 255, 255, 0.85);
+  color: black;
+}
+#everyday {
+  grid-area: everyday;
+  position: relative;
+}
+#sour {
+  grid-area: sour;
+  position: relative;
+}
+#french {
+  grid-area: french;
+  position: relative;
+}
+#banana {
+  grid-area: banana;
+  position: relative;
+}
+/* CONTACT  */
+#contact {
+  height: 100vh;
+}
+#contact-flex {
+  width: 70vw;
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+#contact article {
+  display: grid;
+  grid-template-columns: 94px 408px;
+  grid-template-rows: 46px 331px 124px;
+  grid-template-areas:
+    "title title"
+    ". map"
+    "info info";
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 50px;
+  padding: 5px 46px 35px 60px;
+}
+#top-logo{
+  margin-top: 40px;
+}
+#contact h4 {
+  display: grid;
+  font-size: 23px;
+  grid-area: title;
+  align-items: center;
+  justify-items: center;
+  font-style: italic;
+  padding-top: 12px;
+  margin: 0px;    
+}
+#map {
+  width: 100%;
+  height: 100%;
+  grid-area: map;
+}
+#map iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+#info {
+  grid-area: info;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+#work-hours h5 {
+  font-size: 21px;
+  margin-bottom: -5px;
+  text-decoration: underline;
+}
+#work-hours h5 {
+  font-size: 102%;
+  margin-bottom: -15px;
+  margin-top: 8px;
+  margin-bottom: 2px;
+}
+#work-hours p{
+  margin: 0px;
+}
+address {
+  text-align: right;
+  font-style: normal;
+  font-size: 21px;
+  line-height: 1.5;
+}
+address h5{
+  margin: 0px;
+}
+address a {
+  color: black;
+}
+address a:hover{
+  color: rgb(102, 99, 99);
+  text-decoration: underline; 
+}
+#background-video {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+/************************************************/
+/************** RESPONSIVENESS *****************/
+/************************************************/
+@media screen and (max-width: 1007px) {
+  /*   NAV    */ 
+  #top-logo{
+    z-index: -1;
+    position: absolute;
+  }
+  nav {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #0e0808;
+    height: 60px;
+    z-index: 100;
+  }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+  }
+  nav li {
+    display: inline;      
+  }
+  #nav-logo {
+    position: static;
+    width: 200px;
+    z-index: 300;
+    padding: 10px 10px 10px 20px;
+  }
+  nav a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  nav li:active {
+    color: #403636;
+    text-decoration: underline;
+  }
+  /*   ABOUT   */  
+  h1{
+      font-size: 35px;
+  }
+  #article-about h2{
+      font-size: 22px;
+  }
+  #article-about p{
+      font-size: 18px;
+  }
+  #article-comments {
+      width: 90%;
+  }
+  .comment{
+      width: 230px;
+      margin: 70px 5px 0px 5px;
+      padding: 20px 10px 0px 10px;
+  }
+  /*    BREAD     */
+  .container {
+    grid-template-columns: 286px 20px 286px;
+    grid-template-rows: 385px 10px 175px 10px 385px;
+  }
+  .tile-v {
+    width: 286px;
+    height: 548px;
+    border: solid white 4px;
+  }
+  .tile-h {
+    width: 286px;
+    height: 364px;
+    border: solid white 4px;
+  }
+  .container a {
+    top: 49%;
+    left: 51%;
+    Font-size: 40px;
+  }
+  /*   CONTACTS   */
+  /* For smaller screens (not desktops), would remove video and keep only the poster image. However, as far as I can tell, that requires js or jquery. Too advanced for now:)*/
+  #contact-flex {
+    justify-content: center;
+  }
+  #contact article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    width: 60vw;
+    height: 100%;
+    padding: 5px 50px 30px 50px;
+  }  
+  #info {
+    align-items: flex-end;
+    width: 100%;
+    height: 30%;
+  }
+  #info h5{
+    margin-top: 0px;
+  }
+  #map {
+    margin: 10px 0px 10px 0px;
+    height: 70%;
+  }
+  #map iframe {
+       height: 100%;
+  }    
+}
+@media screen and (max-width: 640px) {
+    /*   NAV   */
+    nav{
+      flex-direction: column;
+      height: 100px;
+      justify-content: center;
+      align-items: center;
+    }
+    nav ul{
+      height: 30px;
+      margin-top: -15px
+    }
+    #nav-logo{
+      padding: 0px;
+    }
+    /*   START   */
+    #start-logo-background {
+      width: 98%;
+    }
+    #start-logo-background img{
+      width: 95%;
+    }
+    #start h2 {
+      font-size: 24px;
+    }   
+     /*   ABOUT   */
+    #article-about {
+      width: 95vw;
+      padding: 20px 5px 10px 5px;
+    }
+    h1{
+        font-size: 28px;
+        margin-bottom: 15px;
+    }
+    #article-about h2 {
+      font-size: 22px;
+      font-style: italic;
+      padding-bottom: 10px;
+    }
+    #article-about p {
+      font-size: 18px;
+    }
+    #signature-area{
+       text-align: end;
+       padding-top: 28px;
+       width: 100%;
+   }  
+  /*    COMMENTS    */
+    #article-comments {
+      flex-flow: column;
+      align-items: center;
+      margin-bottom: 100px;
+    }
+    .comment {
+      margin-top: 35px;
+      height: 150px;
+      width: 85%;
+      font-size: 16px;
+    }
+    /*   BREAD   */
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+    .tile-v {
+      width: 300px;
+      height: 300px;
+      border: solid white 5px;
+      margin-top: 20px;
+    }
+    .tile-h {
+      width: 300px;
+      height: 300px;
+      border: solid white 5px;
+      margin-top: 20px;
+    }
+    .container a {
+      top: 47%;
+      left: 50%;
+    }  
+    /*   CONTACTS   */ 
+    #contact article {
+      width: 90vw;
+      margin: 0px;
+      padding: 0px 15px 0px 15px;
+    }
+    #contact article h4 {
+      padding-top: 10px;
+    }
+    #map {
+        width: 85vw; 
+        height: 270px;
+    }
+    #map iframe {
+         width: 85vw;
+         height: 270px;
+    }  
+    #info {
+      flex-direction: column;
+      align-items: center;
+      width: 90%;
+      height: 230px;
+      text-align: center;
+      padding-top: 15px;
+      padding-bottom: 30px;
+    }
+    #work-hours h5{
+      margin: 10px;
+    }
+    address {
+      padding-top: 20px;
+      text-align: center;
+    }
+  }
+  
